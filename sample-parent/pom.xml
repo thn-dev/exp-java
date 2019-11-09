@@ -14,19 +14,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-<!--
-    <distributionManagement>
-        <snapshotRepository>
-            <id>repo.snapshots</id>
-            <url>s3://<bucket>/maven-repo/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>repo.thn.releases</id>
-            <url>s3://<bucket>/maven-repo/releases</url>
-        </repository>
-    </distributionManagement>
--->
-
     <dependencyManagement>
         <dependencies>
             <dependency>

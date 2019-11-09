@@ -19,19 +19,6 @@
     <junit.version>4.12</junit.version>
   </properties>
 
-  <!--
-  <distributionManagement>
-    <snapshotRepository>
-      <id>repo.<name>.snapshots</id>
-      <url>s3://<bucket>/maven-repo/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>repo.<name>.releases</id>
-      <url>s3://<bucket>/maven-repo/releases</url>
-    </repository>
-  </distributionManagement>
--->
-
   <build>
     <plugins>
       <plugin>
