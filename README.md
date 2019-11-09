@@ -1,3 +1,3 @@
-# sample-maven-multi
+# experimenting java projects
 
-an example of setting up a multi-project under one parent using maven obviously :)
+TBD
