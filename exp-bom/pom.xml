@@ -24,7 +24,7 @@
     <httpclient.version>4.5.13</httpclient.version>
 
     <jsoup.version>1.14.2</jsoup.version>
-    <snakeyaml.version>1.20</snakeyaml.version>
+    <snakeyaml.version>1.26</snakeyaml.version>
 
     <protobuf-java.version>3.16.1</protobuf-java.version>
     <guava.version>29.0-jre</guava.version>
