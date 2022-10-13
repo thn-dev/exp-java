@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+<!--
+   <localRepository>${user.home}/.m2/repository</localRepository>
+   <interactiveMode>true</interactiveMode>
+   <offline>false</offline>
+
+   <servers>
+      <server>
+         <username>username</username>
+         <password>password</password>
+         <id>central</id>
+      </server>
+      <server>
+         <username>username</username>
+         <password>password</password>
+         <id>snapshots</id>
+      </server>
+   </servers>
+-->
+
+   <profiles>
+      <profile>
+         <id>artifactory</id>
+
+         <repositories>
+            <repository>
+               <id>twttr</id>
+               <name>twtter-lib</name>
+               <url>https://maven.twttr.com/</url>
+            </repository>
+            <repository>
+               <id>central</id>
+               <name>libs-release</name>
+               <url>https://repo.maven.apache.org/maven2/</url>
+            </repository>
+            <repository>
+               <id>snapshots</id>
+               <name>libs-snapshot</name>
+               <url>https://repo.maven.apache.org/maven2/</url>
+            </repository>
+         </repositories>
+
+         <pluginRepositories>
+            <pluginRepository>
+               <snapshots>
+                  <enabled>false</enabled>
+               </snapshots>
+               <id>central</id>
+               <name>plugins-release</name>
+               <url>https://repo.maven.apache.org/maven2/</url>
+            </pluginRepository>
+
+            <pluginRepository>
+               <snapshots />
+               <id>snapshots</id>
+               <name>plugins-snapshot</name>
+               <url>https://repo.maven.apache.org/maven2/</url>
+            </pluginRepository>
+         </pluginRepositories>
+      </profile>
+   </profiles>
+
+   <activeProfiles>
+      <activeProfile>artifactory</activeProfile>
+   </activeProfiles>
+</settings>
